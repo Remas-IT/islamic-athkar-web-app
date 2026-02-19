@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الورد اليومي</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>الورد اليومي</h1>
+<h2>اضغط على الزر حتى تصل إلى 100</h2>
+
+<button class="buttonone" onclick="incrementCounter()">اذكر الله</button>
+
+<div class="counter" id="counter">0</div>
+
+<div class="emoji" id="emoji">🎉</div>
+
+<script>
+let count = 0;
+
+// Function to increase counter
+function incrementCounter() {
+if (count < 100) {
+count++;
+document.getElementById("counter").innerText = count;
+
+if (count % 10 === 0) {
+showEmoji();
+}
+} else {
+alert("لقد أكملت 100 ذكر!");
+}
+}
+
+// Function to show emoji temporarily
+function showEmoji() {
+const emoji = document.getElementById("emoji");
+emoji.style.opacity = 1;
+setTimeout(() => {
+emoji.style.opacity = 0;
+}, 1000);
+}
+</script>
+
+<a href="index.php" class="back-to-home">العودة إلى الصفحة الرئيسية</a>
+
+</body>
+</html>
