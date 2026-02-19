@@ -27,5 +27,5 @@ It allows users to:
 3. Create a table `subscribers(email)`
 4. Open `index.php` in the browser
 
-## Author
-Student Project – Information Technology
+## Authors
+Group Project
