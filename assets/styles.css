@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  background-color: #EEEDEB;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Containers */
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #EDE8DC;
+  border-radius: 8px;
+}
+
+.container2 {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #FFFDF9;
+  border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+  color: #7F7C82;
+  margin-top: 50px;
+  font-size: 2.5rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #987D9A;
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  border: 2px solid #987D9A;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+a:hover {
+  background-color: #987D9A;
+  color: white;
+}
+
+/* Content */
+.content {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.buttonone {
+  background-color: #A5B68D;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttontwo {
+  background-color: #A5B68D;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #C1CFA1;
+}
+
+/* Counter */
+.counter {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+/* Emoji */
+.emoji {
+  font-size: 80px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Prayer times */
+.prayer-times {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.no-data-message {
+  color: gray;
+}
+
+/* Message */
+.message {
+  font-size: 1.5rem;
+  background-color: rgba(255,255,255,0.8);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Share */
+.share-section {
+  margin-top: 40px;
+}
+
+.share-button {
+  background-color: #aca5a5;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
