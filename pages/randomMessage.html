@@ -3,29 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>رسالة اليوم</title>
-<link rel="stylesheet" href="styles.css">
+
+<!-- CSS path updated -->
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 
 <body>
 
 <h1>رسالة اليوم</h1>
 
+<!-- Container where random message will be displayed -->
 <div class="message" id="random-message"></div>
 
+<!-- Links back to morning and evening pages -->
 <a href="morning.html" class="back-link">العودة لأذكار الصباح</a>
 <a href="evening.html" class="back-link">العودة لأذكار المساء</a>
 
 <script>
+// Array of random messages
 const messages = [
-"ولا تحزني",
-"إن مع العسر يسرا",
-"ألا بذكر الله تطمئن القلوب",
-"وما توفيقي إلا بالله",
-"ومن يتوكل على الله فهو حسبه"
+    "ولا تحزني",
+    "إن مع العسر يسرا",
+    "ألا بذكر الله تطمئن القلوب",
+    "وما توفيقي إلا بالله",
+    "ومن يتوكل على الله فهو حسبه"
 ];
 
+// Select a random message and display it
 document.getElementById("random-message").innerText =
-messages[Math.floor(Math.random() * messages.length)];
+    messages[Math.floor(Math.random() * messages.length)];
 </script>
 
 </body>
