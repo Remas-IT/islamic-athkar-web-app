@@ -4,23 +4,26 @@
 <meta charset="UTF-8">
 <title>رسالة اليوم</title>
 
-<!-- CSS path updated -->
-<link rel="stylesheet" href="../assets/style.css">
+<!-- Link to external CSS for consistent styling -->
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <h1>رسالة اليوم</h1>
 
-<!-- Container where random message will be displayed -->
+<!-- 
+Container for displaying a random message.
+ID "random-message" is used by JavaScript to insert the text dynamically.
+-->
 <div class="message" id="random-message"></div>
 
-<!-- Links back to morning and evening pages -->
+<!-- Links to return to morning or evening athkar pages -->
 <a href="morning.html" class="back-link">العودة لأذكار الصباح</a>
 <a href="evening.html" class="back-link">العودة لأذكار المساء</a>
 
 <script>
-// Array of random messages
+// Array of messages for daily inspiration
 const messages = [
     "ولا تحزني",
     "إن مع العسر يسرا",
@@ -29,9 +32,11 @@ const messages = [
     "ومن يتوكل على الله فهو حسبه"
 ];
 
-// Select a random message and display it
-document.getElementById("random-message").innerText =
-    messages[Math.floor(Math.random() * messages.length)];
+// Select a random message from the array
+const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+// Display the random message inside the div with ID "random-message"
+document.getElementById("random-message").innerText = randomMessage;
 </script>
 
 </body>
