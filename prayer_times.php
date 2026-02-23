@@ -1,4 +1,5 @@
 <?php
+// Database connection settings
 $host = "localhost";
 $dbname = "azkar_app";
 $username = "root";
@@ -8,6 +9,7 @@ try {
 $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+// Fetch prayer times
 $stmt = $conn->prepare("SELECT * FROM prayer_times LIMIT 1");
 $stmt->execute();
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -22,9 +24,11 @@ echo "Database error: " . $e->getMessage();
 <head>
 <meta charset="UTF-8">
 <title>أوقات الصلاة</title>
-<link rel="stylesheet" href="styles.css">
-</head>
 
+<!-- Updated CSS path after moving style.css into assets folder -->
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
 <body>
 
 <div class="container2">
@@ -43,7 +47,6 @@ echo "Database error: " . $e->getMessage();
 <?php endif; ?>
 
 <a href="index.php" class="back-link">العودة للصفحة الرئيسية</a>
-
 </div>
 
 </body>
