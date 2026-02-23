@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الورد اليومي</title>
 
-<link rel="stylesheet" href="styles.css">
+<!-- CSS path updated after moving style.css into assets folder -->
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 
 <body>
@@ -13,40 +14,45 @@
 <h1>الورد اليومي</h1>
 <h2>اضغط على الزر حتى تصل إلى 100</h2>
 
+<!-- Button triggers the counter increment -->
 <button class="buttonone" onclick="incrementCounter()">اذكر الله</button>
 
+<!-- Display current count -->
 <div class="counter" id="counter">0</div>
 
+<!-- Emoji display that appears every 10 counts -->
 <div class="emoji" id="emoji">🎉</div>
 
 <script>
-let count = 0;
+let count = 0; // Initial counter value
 
-// Function to increase counter
+// Function to increase the counter
 function incrementCounter() {
-if (count < 100) {
-count++;
-document.getElementById("counter").innerText = count;
+    if (count < 100) { // Limit to 100
+        count++;
+        document.getElementById("counter").innerText = count;
 
-if (count % 10 === 0) {
-showEmoji();
-}
-} else {
-alert("لقد أكملت 100 ذكر!");
-}
+        // Show emoji every 10 counts
+        if (count % 10 === 0) {
+            showEmoji();
+        }
+    } else {
+        alert("لقد أكملت 100 ذكر!"); // Alert user when counter reaches 100
+    }
 }
 
-// Function to show emoji temporarily
+// Function to temporarily display emoji
 function showEmoji() {
-const emoji = document.getElementById("emoji");
-emoji.style.opacity = 1;
-setTimeout(() => {
-emoji.style.opacity = 0;
-}, 1000);
+    const emoji = document.getElementById("emoji");
+    emoji.style.opacity = 1; // Make emoji visible
+    setTimeout(() => {
+        emoji.style.opacity = 0; // Hide after 1 second
+    }, 1000);
 }
 </script>
 
-<a href="index.php" class="back-to-home">العودة إلى الصفحة الرئيسية</a>
+<!-- Back link to main page -->
+<a href="../index.php" class="back-to-home">العودة إلى الصفحة الرئيسية</a>
 
 </body>
 </html>
