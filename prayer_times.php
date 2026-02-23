@@ -25,7 +25,7 @@ echo "Database error: " . $e->getMessage();
 <meta charset="UTF-8">
 <title>أوقات الصلاة</title>
 
-<!-- Updated CSS path after moving style.css into assets folder -->
+<!-- CSS path after moving style.css into assets folder -->
 <link rel="stylesheet" href="assets/style.css">
 
 </head>
@@ -51,3 +51,4 @@ echo "Database error: " . $e->getMessage();
 
 </body>
 </html>
+
