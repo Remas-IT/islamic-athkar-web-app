@@ -8,7 +8,7 @@
 <!-- Import Arabic Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Updated CSS path after moving style.css into assets folder -->
+<!-- CSS path after moving style.css into assets folder -->
 <link rel="stylesheet" href="assets/style.css">
 
 </head>
@@ -17,7 +17,7 @@
 <div class="container2">
 <h1>أذكار المسلم</h1>
 
-<!-- Updated page paths after moving HTML files into pages folder -->
+<!-- page paths after moving HTML files into pages folder -->
 <a href="pages/morning.html" target="_blank">أذكار الصباح</a>
 <a href="pages/evening.html" target="_blank">أذكار المساء</a>
 <a href="pages/daily.html" target="_blank">الورد اليومي</a>
@@ -100,3 +100,4 @@ document.getElementById("share").href =
 
 </body>
 </html>
+
