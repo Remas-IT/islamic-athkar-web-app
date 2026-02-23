@@ -5,30 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>أذكار المساء</title>
 
-<!-- CSS path after moving style.css into assets folder -->
-<link rel="stylesheet" href="../assets/style.css">
+<!-- Link to external CSS for styling the page -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- 
+Note: The link to the random message page should actually be inside <body>
+because <a> is interactive content. 
+We will fix its placement below.
+-->
 
 </head>
 <body>
 
 <h1>أذكار المساء</h1>
 
-<!-- Link to random message page (in the same 'pages' folder) -->
-<a href="random_massage.html" target="_blank">انقرني أولاً!</a>
+<!-- Link to the random message page (opens in a new tab) -->
+<a href="randomMessage.html" target="_blank">انقرني أولاً!</a>
 
 <div class="content">
-<p><strong>اذكر الله في نهاية يومك</strong></p>
-
-<!-- Evening athkar list -->
-<p>- سورة الإخلاص ثلاث مرات</p>
-<p>- سورة الفلق ثلاث مرات</p>
-<p>- سورة الناس ثلاث مرات</p>
-<p>- أمسينا وأمسى الملك لله</p>
-<p>- اللهم إني أسألك خير هذه الليلة</p>
+    <!-- Main content container for evening athkar -->
+    <p><strong>اذكر الله في نهاية يومك</strong></p>
+    <p>- سورة الإخلاص ثلاث مرات</p>
+    <p>- سورة الفلق ثلاث مرات</p>
+    <p>- سورة الناس ثلاث مرات</p>
+    <p>- أمسينا وأمسى الملك لله</p>
+    <p>- اللهم إني أسألك خير هذه الليلة</p>
 </div>
 
-<!-- back link to main index page after restructuring -->
-<a href="../index.php" class="back-to-home">العودة إلى الصفحة الرئيسية</a>
+<!-- Back link to return to the main page -->
+<a href="index.php" class="back-to-home">العودة إلى الصفحة الرئيسية</a>
 
 </body>
 </html>
