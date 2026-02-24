@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,99 +14,36 @@
 <body>
 
 <div class="container2">
-<h1>أذكار المسلم</h1>
+    <h1>أذكار المسلم</h1>
 
-<!-- Links to different Athkar pages -->
-<!-- Opens each page in a new tab -->
-<a href="morning.html" target="_blank">أذكار الصباح</a>
-<a href="evening.html" target="_blank">أذكار المساء</a>
-<a href="daily.html" target="_blank">الورد اليومي</a>
-
-<!-- Button container for prayer times page -->
-<div class="button-container">
-<a href="prayer_times.php" class="btn">عرض أوقات الصلاة</a>
-</div>
-
-<!-- Email subscription section -->
-<div class="container">
-<p><strong>اشترك لتذكيرك بقراءة الأذكار</strong></p>
-
-<!-- Subscription form -->
-<form method="post">
-<input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
-<button type="submit" name="subscribe" class="buttontwo">اشترك</button>
-</form>
-
-<?php
-// ---------------------------
-// PHP: handle email subscriptions
-// ---------------------------
-
-// Database connection settings
-$host = "localhost";
-$dbname = "adhkar_reminder";
-$username = "root";
-$password = "";
-
-try {
-    // Create PDO connection to MySQL database
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Check if user submitted the subscription form
-    if (isset($_POST['subscribe'])) {
-
-        // Sanitize email input
-        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-
-        // Validate email format
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-
-            // Prepare SQL statement to insert email
-            $stmt = $conn->prepare("INSERT INTO subscribers (email) VALUES (:email)");
-            $stmt->bindParam(':email', $email);
-
-            // Execute the query and provide feedback
-            if ($stmt->execute()) {
-                echo "<p>تم الاشتراك بنجاح! ستتلقى تذكيراتك قريبًا.</p>";
-            } else {
-                echo "<p>حدث خطأ أثناء الاشتراك.</p>";
-            }
-
-        } else {
-            // Email format is invalid
-            echo "<p>الرجاء إدخال بريد إلكتروني صحيح.</p>";
-        }
-    }
-
-} catch (PDOException $e) {
-    // Catch database connection errors
-    echo "<p>خطأ في الاتصال بقاعدة البيانات: " . $e->getMessage() . "</p>";
-}
-?>
+    <!-- Links to different Athkar pages -->
+    <!-- Opens each page in a new tab -->
+    <a href="morning.html" target="_blank">أذكار الصباح</a>
+    <a href="evening.html" target="_blank">أذكار المساء</a>
+    <a href="daily.html" target="_blank">الورد اليومي</a>
 </div>
 
 <!-- Section to share random Athkar on WhatsApp -->
 <div class="share-section">
-<h3>شارك الأذكار:</h3>
-<a id="share" class="share-button" href="#" onclick="shareThikr()">مشاركة على واتساب</a>
+    <h3>شارك الأذكار:</h3>
+    <a id="share" class="share-button" href="#" onclick="shareThikr()">مشاركة على واتساب</a>
 </div>
 
 <script>
 // Array containing some Athkar (remembrance phrases)
 const athkar = [
-"سبحان الله",
-"الحمد لله",
-"لا إله إلا الله",
-"الله أكبر",
-"استغفر الله",
-"لا حول ولا قوة إلا بالله"
+    "سبحان الله",
+    "الحمد لله",
+    "لا إله إلا الله",
+    "الله أكبر",
+    "استغفر الله",
+    "لا حول ولا قوة إلا بالله"
 ];
 
 // Function to select a random Athkar and set WhatsApp share link
 function shareThikr() {
     const randomThikr = athkar[Math.floor(Math.random() * athkar.length)];
-    // Update the href of the share link dynamically
+    // the href of the share link dynamically
     document.getElementById("share").href = "https://wa.me/?text=" + encodeURIComponent(randomThikr);
 }
 </script>
