@@ -1,6 +1,6 @@
 # Athkar Web Application
 
-A simple Arabic web application that provides Islamic athkar (remembrance) in an organized and user-friendly interface. The application allows users to read daily athkar and interact with basic dynamic features.
+A web-based Arabic application that provides Islamic athkar (remembrance) through an organized and user-friendly interface. The application allows users to read daily athkar and interact with dynamic features such as a dhikr counter and random reminders.
 
 ---
 
