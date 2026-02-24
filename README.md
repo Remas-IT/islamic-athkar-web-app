@@ -17,7 +17,7 @@ A web-based Arabic application that provides Islamic athkar (remembrance) throug
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla)
+- JavaScript 
 
 ---
 
