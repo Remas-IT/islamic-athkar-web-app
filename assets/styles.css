@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap');
-
 body {
   font-family: 'Noto Sans Arabic', sans-serif;
   background-color: #EEEDEB;
@@ -9,20 +7,12 @@ body {
   text-align: center;
 }
 
-/* Containers */
+/* Container */
 .container {
   max-width: 300px;
   margin: 0 auto;
   padding: 10px;
   background-color: #EDE8DC;
-  border-radius: 8px;
-}
-
-.container2 {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 15px;
-  background-color: #FFFDF9;
   border-radius: 8px;
 }
 
@@ -98,34 +88,11 @@ button:hover {
   transition: opacity 1s;
 }
 
-/* Prayer times */
-.prayer-times {
-  background-color: #ecf0f1;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.no-data-message {
-  color: gray;
-}
-
-/* Message */
+/* Random Message */
 .message {
   font-size: 1.5rem;
   background-color: rgba(255,255,255,0.8);
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
-}
-
-/* Share */
-.share-section {
-  margin-top: 40px;
-}
-
-.share-button {
-  background-color: #aca5a5;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
 }
