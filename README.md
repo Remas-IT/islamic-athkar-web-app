@@ -1,32 +1,36 @@
 # Athkar Web Application
 
-This project is a simple Arabic web application that provides Islamic athkar (remembrance) in an organized and accessible way. It allows users to:
+A simple Arabic web application that provides Islamic athkar (remembrance) in an organized and user-friendly interface. The application allows users to read daily athkar and interact with basic dynamic features.
 
-- View morning and evening athkar in one place  
-- Use a counter to track daily dhikr  
-- View prayer times stored in a database  
-- Subscribe with email for daily reminders  
-
-## Technologies Used
-- HTML  
-- CSS  
-- JavaScript  
-- PHP  
-- MySQL  
+---
 
 ## Features
-- Organized display of daily athkar  
-- Random motivational message  
-- Daily counter (up to 100)  
-- Email subscription system  
-- Prayer times display from database  
+
+- **Morning & Evening Athkar:** Organized display of daily remembrance content.
+- **Daily Dhikr Counter:** Track daily dhikr up to 100 with visual feedback.
+- **Random Motivational Message:** Displays a randomly selected reminder.
+- **WhatsApp Sharing:** Share a random dhikr directly via WhatsApp.
+
+---
+
+## Technologies Used
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)
+
+---
 
 ## How to Run
-1. Place the project folder inside XAMPP `htdocs`  
-2. Create a database named `adhkar_reminder`  
-3. Create a table `subscribers(email)`  
-4. Open `index.php` in the browser  
 
-## Authors
-Group Project
+1. Download or clone the repository.
+2. Open `index.html` in any modern web browser.
+3. Navigate between pages and use the interactive features.
 
+---
+
+## Project Type
+
+Developed as a group academic project for IT coursework.
+
+---
